@@ -1,0 +1,77 @@
+﻿<Window x:Class="MJ003.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="Manual"
+        xmlns:local="clr-namespace:MJ003"
+        mc:Ignorable="d"
+        Background="LightSlateGray"
+        WindowStyle="None"
+        Title="GameWindow1" KeyUp="Window_KeyUp" Height="1000" Width="800" >
+    <Grid Name="PlayerViewGrid" Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" MinHeight="400" Margin="50,25,0,0" Grid.Row="0"  VerticalAlignment="Top" Width="700">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Name="Text0000" Text="tester1" Background="Beige" Grid.Row="0" Grid.Column="0"/>
+            <TextBlock Name="Text0008" Text="tester2" Background="Beige" Grid.Row="0" Grid.Column="8">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <TextBlock Name="Text0400" Text="tester3" Background="Beige" Grid.Row="4" Grid.Column="0"/>
+            <TextBlock Name="Text0408" Text="tester4" Background="Beige" Grid.Row="4" Grid.Column="8"/>
+            <TextBlock Name="Text0101" Text="Hello" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" >
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Background" Value="Beige"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Aqua"/>
+                                <Setter Property="ToolTip" Value="xxx"/>
+                            </Trigger>
+
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+        <TextBlock Name="Description" Text="It's too dark to see" Grid.Row="1" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Stretch" FontSize="24"  Width="700"/>
+        <Button Name="Button001" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="2" Margin="40,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden" Click="Button001_Click" />
+        <Button x:Name="Button002" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="2" Margin="230,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden" Click="Button002_Click"/>
+        <Button x:Name="Button003" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="2" Margin="420,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden" Click="Button003_Click"/>
+        <Button x:Name="Button004" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="2" Margin="610,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+        <Button x:Name="Button005" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="3" Margin="40,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+        <Button x:Name="Button006" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="3" Margin="230,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+        <Button x:Name="Button007" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="3" Margin="420,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+        <Button x:Name="Button008" Content="Button" HorizontalAlignment="Left" Height="80" Grid.Row="3" Margin="610,0,0,0" VerticalAlignment="Top" Width="150" Visibility="Hidden"/>
+
+    </Grid>
+
+</Window>

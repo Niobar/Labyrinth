@@ -1,0 +1,16 @@
+﻿<Window x:Class="MJ003.CharacterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MJ003"
+        mc:Ignorable="d"
+        WindowStartupLocation="Manual"
+        Background="LightSlateGray"
+        WindowStyle="None"
+        Title="Character" Height="450" Width="800">
+    <Grid>
+        <TextBlock Name="CharacterName" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="128" Margin="40,33,0,0"><Run Text="TextBlock"/></TextBlock>
+        <TextBlock x:Name="testBlock" Height="50" Width="150" Margin="40,133,0,0"/>
+    </Grid>
+</Window>
